@@ -1,4 +1,5 @@
-# C++20 Project Setup Guide: Apple Silicon Mac, CMake & GoogleTest
+# C++20 Project Setup Guide
+### For Apple Silicon Mac, CMake & GoogleTest
 
 ## Introduction
 This guide outlines steps for setting up a new project using C++20, CMake, and the GoogleTest unit testing framework. It's tailored for Apple Silicon Macs (M1/M2), but the process is similar on other operating systems.
