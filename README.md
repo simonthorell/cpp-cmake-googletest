@@ -2,13 +2,33 @@
 ### For Apple Silicon Mac, CMake & GoogleTest
 
 ## Introduction
-This guide outlines steps for setting up a new project using C++20, CMake, and the GoogleTest unit testing framework. It's tailored for Apple Silicon Macs (M1/M2), but the process is similar on other operating systems.
+This guide outlines steps for setting up a new project using C++20, CMake, and the GoogleTest unit testing framework. This repo is tailored and tested for Apple Silicon Macs, but the process is  
+similar on other operating systems.
 
-## Installation Instructions
+## Prerequisites
+Before you begin, ensure you have the following installed on your Mac:
+- CMake
+- Git
+- Xcode Command Line Tools (includes Make and Clang C/C++ compiler)
+- [Optional] GCC Compiler *(preferred for embedded development such as AVR)*
+- [Optional] Visual Studio Code with CMake Tools extension
 
-### Installing CMake on Mac
-- **Using Homebrew**: Run `brew install cmake` in the terminal.
-- **Verifying Installation**: Check the installed version with `cmake --version`.
+### Installing Prerequisites on Mac
+- **CMake**:
+  - Install using Homebrew: `brew install cmake`
+  - Verify installation: `cmake --version`
+- **Git**:
+  - Install using Homebrew: `brew install git`
+  - Verify installation: `git --version`
+- **Xcode Command Line Tools**:
+  - Install using: `xcode-select --install`
+  - This includes Make as well as Clang, which is recommended for macOS development.
+- **GCC Compiler (Optional)**:
+  - Install using Homebrew: `brew install gcc`
+  - Verify installation: `gcc --version`
+  - Note: Clang is the default compiler on macOS. To use GCC, specify it in your CMake configuration or use environment variables.
+- **Visual Studio Code (Optional)**:
+  - Download and install from [Visual Studio Code website](https://code.visualstudio.com/)
 
 ## Project Setup
 
