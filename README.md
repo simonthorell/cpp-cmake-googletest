@@ -21,7 +21,7 @@ This guide outlines steps for setting up a new project using C++20, CMake, and t
 2. Generate the build system and fetch Google Tests: `cmake ..`.
 3. Compile the project: `cmake --build .`.
 
-## Quick compile using CMake Tools (alternative)
+### Quick compile using CMake Tools (alternative)
 1. Make sure CMake Tools VS-Code extension is installed.
 2. Press F1 and type and select 'CMake: Configure' (may be completed automatically upon project init)
 3. Press F7 to compile using 'CMake: Build'
