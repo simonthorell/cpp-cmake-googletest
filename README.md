@@ -1,5 +1,5 @@
 # C++20 Project Setup Guide
-### For Apple Silicon Mac, CMake & GoogleTest
+### For Apple Silicon Mac using C++20, CMake & GoogleTest
 
 ## Introduction
 This guide outlines steps for setting up a new project using C++20, CMake, and the  
