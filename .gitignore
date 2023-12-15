@@ -1,4 +1,10 @@
-.vscode/
+# Ignore everything in the .vscode directory
+.vscode/*
+# But re-include settings.json
+# Needed for VS code on Mac to find C++20 STL headers
+!.vscode/settings.json
+
 build/
+
 .DS_Store
 .cache/
