@@ -11,7 +11,7 @@ on other operating systems.
 Before you begin, ensure you have the following installed on your Mac:
 - **CMake**
 - **Git**
-- **Xcode Command Line Tools** *(includes **Make** and **Clang** C/C++ compiler)*
+- **Xcode Command Line Tools** *(includes **Make**, **Clang** C/C++ compiler & **LLDB** debugger)*
 - [Optional] **GCC Compiler** *(preferred for embedded development such as AVR)*
 - [Optional] **Visual Studio Code** with **CMake Tools** extension
 
@@ -39,15 +39,19 @@ Before you begin, ensure you have the following installed on your Mac:
 1. Clone the repository: `git clone https://github.com/simonthorell/cpp-cmake-googletest.git`.
 2. Navigate to the project directory: `cd cpp-cmake-googletest`.
 
-### Building the Project
-1. Create a 'build' directory: `mkdir build && cd build`.
-2. Generate the build system and fetch Google Tests: `cmake ..`.
-3. Compile the project: `cmake --build .`.
-
-### Quick compile using CMake Tools (alternative)
+### CMake Tools
 1. Make sure **CMake Tools** VS-Code extension is installed.
-2. Press **F1** and type and select 'CMake: Configure' *(may not be needed)*
-3. Press **F7** to compile using 'CMake: Build'
+2. Press **F1** and type and select 'CMake: Configure' *(if not done automatically)*
+
+### Building the Project *(may not be needed if using CMake Tools)*
+1. Create a 'build' directory: `mkdir build && cd build`.  
+2. Generate the build system and fetch Google Tests: `cmake ..`.  
+3. Compile the project: `cmake --build .`.  
+
+### Compile using 'CMake: Build'
+- Press **F5** to compile and debug with LLDB
+- Press **F7** to compile only
+- Run task **Run MyProject** to compile and run executable in terminal
 
 ## Execution
 

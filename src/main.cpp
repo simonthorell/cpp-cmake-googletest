@@ -1,11 +1,13 @@
 #include <iostream>
-#include "mylib.h"
+#include "my_functions.h"
 
 #include <vector>       // std::vector
 #include <ranges>       // std::ranges, std::views
 #include <algorithm>    // std::for_each
 
 int main() {
+    my_function();
+
     std::vector<int> v{1, 2, 3, 4, 5};
 
     // Print all elements
@@ -20,6 +22,17 @@ int main() {
     std::cout << "Even elements: ";
     std::ranges::for_each(even_view, [](int i) { std::cout << i << ' '; });
     std::cout << '\n';
+
+    // Ask user to input "hello"
+    std::cout << "Please enter \"hello\": ";
+    std::string s;
+    std::cin >> s;
+
+    if (s == "hello") {
+        std::cout << "Hello to you too!\n";
+    } else {
+        std::cout << "You didn't say hello :(\n";
+    }
 
     // std::cout << "Hello, World!" << std::endl;
     return 0;

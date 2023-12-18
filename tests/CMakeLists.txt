@@ -13,3 +13,11 @@ target_link_libraries(TestMyProject gtest_main)
 add_test(NAME test_my_project COMMAND TestMyProject)
 
 # For more info on GoogleTest, see https://google.github.io/googletest/quickstart-cmake.html
+
+# Create a custom target for running tests at compile time
+add_custom_target(run_tests ALL
+                  COMMAND echo "Running Tests"
+                  COMMAND $<TARGET_FILE:TestMyProject>)
+
+# Make sure your main project always builds before the tests
+add_dependencies(MyProject run_tests)
