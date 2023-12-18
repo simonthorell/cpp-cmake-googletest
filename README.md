@@ -49,9 +49,9 @@ Before you begin, ensure you have the following installed on your Mac:
 3. Compile the project: `cmake --build .`.  
 
 ### Compile using 'CMake: Build'
-- Press **F5** to compile and debug with LLDB
-- Press **F7** to compile only
-- Run task **Run MyProject** to compile and run executable in terminal
+- Press **F5**         to compile and debug with LLDB in debug console  
+- Press **Shift + F5** to compile and run binary in terminal *(Running task **Run MyProject**)*
+- Press **F7**         to compile only
 
 ## Execution
 

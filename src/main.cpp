@@ -10,12 +10,12 @@ int main() {
 
     std::vector<int> v{1, 2, 3, 4, 5};
 
-    // Print all elements
+    // Print all elements using ranges from C++20
     std::cout << "All elements: ";
     std::ranges::for_each(v, [](int i) { std::cout << i << ' '; });
     std::cout << '\n';
 
-    // Create a view that contains only even numbers
+    // Create a C++20 view that contains only even numbers
     auto even_view = v | std::views::filter([](int i) { return i % 2 == 0; });
 
     // Print only even elements using the view
@@ -23,7 +23,7 @@ int main() {
     std::ranges::for_each(even_view, [](int i) { std::cout << i << ' '; });
     std::cout << '\n';
 
-    // Ask user to input "hello"
+    // Prompt user to input "hello"
     std::cout << "Please enter \"hello\": ";
     std::string s;
     std::cin >> s;
@@ -34,6 +34,5 @@ int main() {
         std::cout << "You didn't say hello :(\n";
     }
 
-    // std::cout << "Hello, World!" << std::endl;
     return 0;
 }
