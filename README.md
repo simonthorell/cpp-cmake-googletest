@@ -26,7 +26,7 @@ Before you begin, ensure you have the following installed on your Mac:
   - Verify installation: `code --version`
 - **GCC Compiler (Optional)**:
   - Install using Homebrew: `brew install gcc`
-  - Verify installation: `gcc --version`
+  - Verify installation: `gcc --version`  
   *Note: Clang is the default compiler on macOS. To use GCC, specify it in your CMake*  
   *configuration or use environment variables.*  
 - **Visual Studio Code (Optional)**:
@@ -50,19 +50,19 @@ Before you begin, ensure you have the following installed on your Mac:
 ## Compilation & Execution
 
 ### Compile using 'CMake: Build'
-- Press **F5**         to compile and debug with LLDB in debug console  
+- Press **F5** to compile and debug with LLDB in debug console  
 - Press **Shift + F5** to compile and run binary in terminal *(Running task* **Run MyProject***)*
-- Press **Ctrl + F5**  to compile and run without debugging
-- Press **F7**         to compile only
+- Press **Ctrl + F5** to compile and run without debugging
+- Press **F7** to compile only
 
 ### Running Tests [optional]
 - In the build folder, replace 'TestMyProject' with your test executable's name and  
-execute: `./tests/TestMyProject`.
+execute: `./tests/TestMyProject`.  
 *Note: Tests are running automatically during compilation in current setup*
 
 ### Running Executable [optional]
 - In the build folder, replace 'MyProject' with your executable's name and  
-run: `./src/MyProject`.
+run: `./src/MyProject`.  
 *Note: Use The Run MyProject task to perform this action (or press shift + F5)*
 
 ## Additional Notes
