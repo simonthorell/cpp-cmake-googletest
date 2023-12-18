@@ -1,5 +1,5 @@
-# C++20 Project Setup Guide
-### For Apple Silicon Mac using C++20, CMake & GoogleTest
+# C++20 Project Setup Template
+### For Apple Silicon Mac using C++20, CMake & GoogleTest with VSCode
 
 ## Introduction
 This guide outlines steps for setting up a new project using C++20, CMake, and the GoogleTest unit  
@@ -7,12 +7,17 @@ testing framework. This repo is tailored and tested for Apple Silicon Macs, but 
 similar on other operating systems.  
 
 ## Prerequisites
-Before you begin, ensure you have the following installed on your Mac:
-- **CMake**
-- **Git**
-- **Xcode Command Line Tools** *(includes Make, Clang C/C++ compiler & LLDB debugger)*
-- [Optional] **GCC Compiler** *(preferred for embedded development such as AVR)*
-- [Optional] **Visual Studio Code** & **CMake Tools** VSCode extension
+
+### Essential Tools
+- **CMake**: Build, test, and package software.
+- **Git**: Version control system.
+- **Xcode Command Line Tools**: Includes Make, Clang C/C++ compiler, and LLDB debugger.
+
+### Optional Tools
+(Based on specific development needs)  
+- **GCC Compiler**: Preferred for embedded development (e.g., AVR).
+- **Visual Studio Code**: Advanced code editor.
+  - **CMake Tools Extension for Visual Studio Code**: Enhances CMake integration with VSCode.
 
 ### Installing Prerequisites on Mac
 - **CMake**:
@@ -39,13 +44,14 @@ Before you begin, ensure you have the following installed on your Mac:
 2. Navigate to the project directory: `cd cpp-cmake-googletest`.
 
 ### CMake Tools
-1. Make sure **CMake Tools** VSCode extension is installed.
-2. Press **F1** and type and select 'CMake: Configure' *(if not done automatically)*  
-3. Select a 'Kit' for CMake in the bottom menu-bar of VSCode to set compiler and toolchain  
+1. Make sure **CMake Tools** VSCode extension is installed
+2. Select a 'Kit' for CMake in the bottom menu-bar of VSCode to set compiler and toolchain  
 for the project *(choose Clang or GCC)*. You can change 'kit' later by pressing this part   
 of the bottom menu again. VSCode may also prompt to choose kit by showing a dropdown list.  
 *Note: Once a 'kit' is selected, CMake should build the project as mentioned in next section.*  
 *If it builds, skip to the 'Compilation & Execution' section*  
+3. If it does not build, press **F1**, type and select 'CMake: Configure' to configure before  
+moving to next section
 
 ### Building the Project [optional]
 1. Create a 'build' directory: `mkdir build && cd build`  
