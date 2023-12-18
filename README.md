@@ -2,16 +2,15 @@
 ### For Apple Silicon Mac using C++20, CMake & GoogleTest
 
 ## Introduction
-This guide outlines steps for setting up a new project using C++20, CMake, and the  
-GoogleTest unit testing framework.  
-This repo is tailored and tested for Apple Silicon Macs, but the process is similar  
-on other operating systems.
+This guide outlines steps for setting up a new project using C++20, CMake, and the GoogleTest unit  
+testing framework. This repo is tailored and tested for Apple Silicon Macs, but the process is  
+similar on other operating systems.  
 
 ## Prerequisites
 Before you begin, ensure you have the following installed on your Mac:
 - **CMake**
 - **Git**
-- **Xcode Command Line Tools** *(includes **Make**, **Clang** C/C++ compiler & **LLDB** debugger)*
+- **Xcode Command Line Tools** *(includes* **Make***,* **Clang** *C/C++ compiler &* **LLDB** *debugger)*
 - [Optional] **GCC Compiler** *(preferred for embedded development such as AVR)*
 - [Optional] **Visual Studio Code** with **CMake Tools** extension
 
@@ -24,12 +23,12 @@ Before you begin, ensure you have the following installed on your Mac:
   - Verify installation: `git --version`
 - **Xcode Command Line Tools**:
   - Install using: `xcode-select --install`
-  - This includes Make as well as Clang *(which is recommended for macOS development)*.
+  - Verify installation: `code --version`
 - **GCC Compiler (Optional)**:
   - Install using Homebrew: `brew install gcc`
   - Verify installation: `gcc --version`
-  - Note: Clang is the default compiler on macOS. To use GCC, specify it in your CMake  
-  configuration or use environment variables.
+  *Note: Clang is the default compiler on macOS. To use GCC, specify it in your CMake*  
+  *configuration or use environment variables.*  
 - **Visual Studio Code (Optional)**:
   - Download and install from [Visual Studio Code website](https://code.visualstudio.com/)
 
@@ -48,20 +47,23 @@ Before you begin, ensure you have the following installed on your Mac:
 2. Generate the build system and fetch Google Tests: `cmake ..`.  
 3. Compile the project: `cmake --build .`.  
 
+## Compilation & Execution
+
 ### Compile using 'CMake: Build'
 - Press **F5**         to compile and debug with LLDB in debug console  
-- Press **Shift + F5** to compile and run binary in terminal *(Running task **Run MyProject**)*
+- Press **Shift + F5** to compile and run binary in terminal *(Running task* **Run MyProject***)*
+- Press **Ctrl + F5**  to compile and run without debugging
 - Press **F7**         to compile only
 
-## Execution
-
-### Running Tests
+### Running Tests [optional]
 - In the build folder, replace 'TestMyProject' with your test executable's name and  
 execute: `./tests/TestMyProject`.
+*Note: Tests are running automatically during compilation in current setup*
 
-### Running Executable
+### Running Executable [optional]
 - In the build folder, replace 'MyProject' with your executable's name and  
 run: `./src/MyProject`.
+*Note: Use The Run MyProject task to perform this action (or press shift + F5)*
 
 ## Additional Notes
 - **Running Specific Tests**: If you have multiple tests, you can use command-line arguments  
