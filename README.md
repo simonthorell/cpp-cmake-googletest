@@ -10,9 +10,9 @@ similar on other operating systems.
 Before you begin, ensure you have the following installed on your Mac:
 - **CMake**
 - **Git**
-- **Xcode Command Line Tools** *(includes* **Make***,* **Clang** *C/C++ compiler &* **LLDB** *debugger)*
+- **Xcode Command Line Tools** *(includes Make, Clang C/C++ compiler & LLDB debugger)*
 - [Optional] **GCC Compiler** *(preferred for embedded development such as AVR)*
-- [Optional] **Visual Studio Code** with **CMake Tools** extension
+- [Optional] **Visual Studio Code** & **CMake Tools** VSCode extension
 
 ### Installing Prerequisites on Mac
 - **CMake**:
@@ -39,7 +39,7 @@ Before you begin, ensure you have the following installed on your Mac:
 2. Navigate to the project directory: `cd cpp-cmake-googletest`.
 
 ### CMake Tools
-1. Make sure **CMake Tools** VS-Code extension is installed.
+1. Make sure **CMake Tools** VSCode extension is installed.
 2. Press **F1** and type and select 'CMake: Configure' *(if not done automatically)*
 
 ### Building the Project *(may not be needed if using CMake Tools)*
