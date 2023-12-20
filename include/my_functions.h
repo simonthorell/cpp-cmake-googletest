@@ -4,5 +4,6 @@
 
 // Function prototypes
 void my_function();
+int addNumbers(int a, int b);
 
 #endif // MY_FUNCTIONS_H

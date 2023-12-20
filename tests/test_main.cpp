@@ -1,4 +1,6 @@
 #include <gtest/gtest.h>
+#include "test_my_functions.cpp"
+// Add more test files to include here...
 
 TEST(SampleTest, BasicAssertions) {
   // Test code here

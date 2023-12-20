@@ -8,8 +8,14 @@ FetchContent_Declare(
 FetchContent_MakeAvailable(googletest)
 
 # Link against gtest or gtest_main as needed
-add_executable(TestMyProject test_main.cpp)
-target_link_libraries(TestMyProject gtest_main)
+add_executable(TestMyProject test_main.cpp) # Adjust with your test files
+# target_link_libraries(TestMyProject gtest_main)
+target_link_libraries(TestMyProject gtest_main MyProjectLib)
+
+# Include the directory where header files is located
+target_include_directories(TestMyProject PRIVATE ../include)
+
+# Add your tests here
 add_test(NAME test_my_project COMMAND TestMyProject)
 
 # For more info on GoogleTest, see https://google.github.io/googletest/quickstart-cmake.html
