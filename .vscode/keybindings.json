@@ -1,0 +1,5 @@
+{
+    "key": "shift+f5",  // Replace with your preferred shortcut
+    "command": "workbench.action.tasks.runTask",
+    "args": "Run MyProject"
+}

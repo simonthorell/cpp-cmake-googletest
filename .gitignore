@@ -1,0 +1,15 @@
+# Ignore everything in the .vscode directory
+.vscode/*
+# Except the files:
+# Needed for VS code on Mac to find C++20 STL headers
+!.vscode/settings.json
+# Include task and launch configurations for build
+!.vscode/launch.json
+!.vscode/tasks.json
+# Include customs keybindings to run tasks in VS code
+!.vscode/keybindings.json
+
+build/
+
+.DS_Store
+.cache/
